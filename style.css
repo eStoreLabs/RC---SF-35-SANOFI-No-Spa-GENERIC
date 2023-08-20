@@ -32,10 +32,10 @@
   text-transform: uppercase;
   text-shadow: 0 0 5px #52338c;
   padding-left: 33%;
-  animation: slideleft 0.6s forwards;
+  /* animation: slideleft 0.6s forwards;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  opacity: 0;
+  opacity: 0; */
 }
 
 #es-sanofi.es-sanofi .es-kv__content {
@@ -171,11 +171,11 @@
   max-width: 60%;
 }
 
-#es-sanofi.es-sanofi .es-package__img--new {
+/* #es-sanofi.es-sanofi .es-package__img--new {
   margin-right: 0;
   -webkit-animation: es-pulse 3s infinite;
           animation: es-pulse 3s infinite;
-}
+} */
 
 #es-sanofi.es-sanofi .es-treatment__title {
   margin: 0;
@@ -340,6 +340,19 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5;
+    transition: ease-in-out 0.5s;
+  -webkit-transform: translateX(-850px);
+      -ms-transform: translateX(-850px);
+          transform: translateX(-850px);
+  transition-delay: 500ms;
+}
+
+#es-sanofi.es-sanofi .es-effect__imgAppear {
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 #es-sanofi.es-sanofi .es-effect__single {
@@ -358,6 +371,13 @@
   position: absolute;
   bottom: 33%;
   left: 11%;
+  opacity: 0;
+  transition: all 1s ease-in;
+  transition-delay: 1000ms;
+}
+
+#es-sanofi.es-sanofi .es-effect__nameAppear {
+  opacity: 100;
 }
 
 #es-sanofi.es-sanofi .es-dose__title {
@@ -543,29 +563,34 @@
 
 #es-sanofi.es-sanofi .es-cross__signature {
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0;
   line-height: inherit;
   color: #52338c;
   font-family: inherit;
   font-weight: 700;
-  font-size: inherit;
+  font-size: 13px;
   text-align: center;
   white-space: nowrap;
+}
+
+#es-sanofi.es-sanofi .es-cross__wrp {
+  display: flex;
 }
 
 #es-sanofi.es-sanofi .es-cross__header {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: column;
-  margin-bottom: 128px;
+  margin-bottom: 133px;
+  margin-right: 16px;
 }
 
 #es-sanofi.es-sanofi .es-cross__wrapper {
   overflow-x: auto;
   display: flex;
   flex-flow: row;
-  gap: 32px;
+  gap: 16px;
 }
 
 #es-sanofi.es-sanofi .es-cross__container {
@@ -631,8 +656,8 @@
   box-shadow: 8px 8px 28px -10px rgb(17, 17, 17);
   transition: 0.3s ease-in-out;
   margin-bottom: 32px;
-  -webkit-animation: es-pulse-2 2s infinite;
-          animation: es-pulse-2 2s infinite;
+  /* -webkit-animation: es-pulse-2 2s infinite;
+          animation: es-pulse-2 2s infinite; */
 }
 
 #es-sanofi.es-sanofi .es-cross__btn:hover {
@@ -640,8 +665,8 @@
   box-shadow: inset 0 0 0 0 rgb(17, 17, 17);
   background: rgb(255,240,100);
   background: linear-gradient(180deg, rgba(255,235,0,1) 0%, rgba(253,194,0,1) 50%, rgba(255,235,0,1) 100%);
-  -webkit-animation: none;
-  animation: none;
+  /* -webkit-animation: none;
+  animation: none; */
 }
 
 #es-sanofi.es-sanofi .es-cross__img {
@@ -662,6 +687,8 @@
   margin-bottom: 8px;
   border-radius: 5px;
   white-space: nowrap;
+  -webkit-animation: es-pulse-2 2s infinite;
+          animation: es-pulse-2 2s infinite;
 }
 
 #es-sanofi.es-sanofi .es-video__iframe {
@@ -739,8 +766,8 @@
   box-shadow: 8px 8px 28px -10px rgb(17, 17, 17);
   transition: 0.3s ease-in-out;
   margin-bottom: 32px;
-  -webkit-animation: es-pulse-2 2s infinite;
-          animation: es-pulse-2 2s infinite;
+  /* -webkit-animation: es-pulse-2 2s infinite;
+          animation: es-pulse-2 2s infinite; */
 }
 
 #es-sanofi.es-sanofi .es-info__btn:hover {
@@ -748,8 +775,8 @@
   box-shadow: inset 0 0 0 0 rgb(17, 17, 17);
   background: rgb(255,240,100);
   background: linear-gradient(180deg, rgba(255,235,0,1) 0%, rgba(253,194,0,1) 50%, rgba(255,235,0,1) 100%);
-  -webkit-animation: none;
-  animation: none;
+  /* -webkit-animation: none;
+  animation: none; */
 }
 
 #es-sanofi.es-sanofi .es-info__pic {
@@ -873,10 +900,10 @@
   #es-sanofi.es-sanofi .es-benefits__img {
     max-width: 100%;
   }
-  #es-sanofi.es-sanofi .es-benefits__pic:hover .es-benefits__img {
+  /* #es-sanofi.es-sanofi .es-benefits__pic:hover .es-benefits__img {
     -webkit-transform: scale(1.2);
       transform: scale(1.2);
-  }
+  } */
   #es-sanofi.es-sanofi .es-reasons__title {
     font-size: 32px;
     max-width: 660px;
@@ -886,10 +913,10 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-    #es-sanofi.es-sanofi .es-reasons__pic:hover .es-reasons__img {
+    /* #es-sanofi.es-sanofi .es-reasons__pic:hover .es-reasons__img {
     -webkit-transform: scale(1.2);
       transform: scale(1.2);
-  }
+  } */
   #es-sanofi.es-sanofi .es-reasons__content {
     gap: 48px;
   }
@@ -916,7 +943,7 @@
     max-width: 80%;
   }
   #es-sanofi.es-sanofi .es-package__footer {
-    font-size: 28px;
+    font-size: 24px;
   }
   #es-sanofi.es-sanofi .es-treatment__title {
     font-size: 32px;
@@ -954,10 +981,10 @@
   #es-sanofi.es-sanofi .es-ingr__img--pill {
     margin: 18px auto;
   }
-  #es-sanofi.es-sanofi .es-ingr__img--icon {
+  /* #es-sanofi.es-sanofi .es-ingr__img--icon {
     -webkit-animation: es-pulse-2 2s infinite;
             animation: es-pulse-2 2s infinite;
-  }
+  } */
   #es-sanofi.es-sanofi .es-video__title {
     font-size: 32px;
     max-width: unset;
@@ -986,18 +1013,21 @@
 
 @media (min-width: 888px) {
 #es-sanofi.es-sanofi .es-package__footer {
-  margin-top: -60px;
+  margin-top: -80px;
   padding-bottom: 8px;
-  margin-left: 7%;
+  margin-left: 9%;
   text-align: left;
-  padding-bottom: 27px;
+  padding-bottom: 47px;
 }
 #es-sanofi.es-sanofi .es-package__img--old {
   max-width: 100%;
   margin-right: 5%;
+  position: relative;
+  z-index: 5;
 }
 #es-sanofi.es-sanofi .es-package__img--new {
   margin-right: 0;
+  margin-top: -100px;
 }
 #es-sanofi.es-sanofi .es-package__img--mobile {
   display: none;
@@ -1057,6 +1087,13 @@
 }
 #es-sanofi.es-sanofi .es-ingr {
   width: 47%;
+}
+#es-sanofi.es-sanofi .es-cross__header {
+  margin-bottom: 117px;
+}
+#es-sanofi.es-sanofi .es-cross__signature {
+  padding: 20px 0;
+  font-size: 16px;
 }
 #es-sanofi.es-sanofi .es-info__title {
   margin-top: -35%;

@@ -673,6 +673,11 @@
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  transition: 0.3s ease-in-out;
+}
+
+#es-sanofi.es-sanofi .es-cross__img:hover {
+  transform: scale(1.1);
 }
 
 #es-sanofi.es-sanofi .es-cross__label {

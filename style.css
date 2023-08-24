@@ -425,7 +425,7 @@
   line-height: inherit;
   color: #fff;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 13px;
   padding-bottom: 16px;
 }
@@ -490,7 +490,7 @@
   line-height: inherit;
   color: #fff;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 13px;
   padding-bottom: 16px;
   text-align: center;
@@ -803,7 +803,7 @@
   line-height: inherit;
   color: inherit;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: inherit;
   font-size: 13px;
   padding-bottom: 16px;
 }
@@ -835,7 +835,7 @@
   line-height: inherit;
   color: inherit;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: inherit;
   font-size: 13px;
 }
 
